@@ -1,0 +1,86 @@
+body{
+  background-color: #EBC4FF;
+  margin: 0;
+  font-family: monospace;
+} 
+.red-bg{
+  background-color:red;
+}
+.rainbow-bg{
+  background: linear-gradient(90deg in hsl longer hue, red 0 100%);
+}
+
+h1{
+  text-align: center;
+  font-size: 50px;
+}
+.container {
+  display: flex;
+  flex-direction: column;   /* stack elements vertically */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.spreadrow {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  margin: 40px 0;
+}
+h2{
+  font-size: 100px;
+}
+/* hidden class */
+.hidden {
+  display: none;
+}
+/* images */
+#duck{
+  height: 200px;
+}
+#duck.big{
+  height:600px;
+}
+#flatduck{
+   height:80px; 
+   width:2000px;
+}
+#piglet {
+  right: 600px;
+  height:200px
+}
+
+/* Buttons */
+#mybutton {
+  background: #fbca1f;
+  font-family: sans-serif;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+#mybutton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+#mybutton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+.disappear{
+  display: none;
+}
+#backbutton{
+background-color: white;
+  color: #007BFF;           /* blue text */
+  border: 2px solid #007BFF; /* blue border */
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;}
