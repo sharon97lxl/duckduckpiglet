@@ -1,5 +1,5 @@
 body{
-  background-color: #b18cc4;
+  background-color: #EBC4FF;
   margin: 0;
   font-family: monospace;
 } 
@@ -10,54 +10,101 @@ body{
   background: linear-gradient(90deg in hsl longer hue, red 0 100%);
 }
 
+/* text formatting */
+
 h1{
   text-align: center;
-  font-size: 50px;
+  font-size: 100px;
 }
+
+h2{
+  text-align: center;
+  font-size: 300px;
+}
+
+h3{
+  font-size:50px;
+}
+p{
+  text-align: center;
+  font-size: 30px;
+}
+
+.countercontainer{
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  font-family: monospace;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  width: 20em;
+}
+
 .container {
   display: flex;
   flex-direction: column;   /* stack elements vertically */
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
+  margin: 10px;
 }
+
 .spreadrow {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100vw;
-  margin: 40px 0;
+  width: 100%;
+  margin: 200px;
 }
-h2{
-  font-size: 100px;
-}
+
 /* hidden class */
 .hidden {
   display: none;
 }
 /* images */
 #duck{
-  height: 200px;
+  height: 500px;
+  border: 3px solid black;
 }
-#duck.big{
-  height:600px;
+
+#duck:hover{
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.30em 0.30em;
 }
+
+#duckegg{
+  height: 800px;
+  border: 10px solid #FAD628;
+  margin: 40px;
+}
+
 #flatduck{
-   height:80px; 
-   width:2000px;
+   height: 200px; 
+   width: 90vw;
+   transform: rotate(180deg);
 }
+
 #piglet {
   right: 600px;
-  height:200px
+  height:500px;
+  border: 3px solid black;
+}
+
+#piglet:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.30em 0.30em;
 }
 
 /* Buttons */
 #mybutton {
-  background: #fbca1f;
-  font-family: sans-serif;
+  background-color: red;
+  font-family: monospace;
   padding: 0.6em 1.3em;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 30px;
   border: 3px solid black;
   border-radius: 0.4em;
   box-shadow: 0.1em 0.1em;
@@ -73,14 +120,49 @@ h2{
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
 }
-.disappear{
-  display: none;
-}
+
 #backbutton{
-background-color: white;
-  color: #007BFF;           /* blue text */
-  border: 2px solid #007BFF; /* blue border */
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;}
+  background-color: white;
+  color: #007BFF; 
+  font-family: monospace;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 30px;
+  border: 3px solid #007BFF;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+#backbutton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+#backbutton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+#eggbutton{
+  background-color: white;
+  color: #FC74FA; 
+  font-family: monospace;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 30px;
+  border: 3px solid #FC74FA;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+  margin: 40px;
+}
+#eggbutton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+#eggbutton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
