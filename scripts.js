@@ -89,6 +89,7 @@ function duckclick() {
   eggbutton.classList.remove("hidden");
 }
 
+//omelette mode
 function fiveeggs() {
   showcounter();
   document.body.classList.add("yellow-bg");
