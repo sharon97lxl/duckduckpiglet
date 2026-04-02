@@ -1,36 +1,56 @@
-body{
-  background-color: #EBC4FF;
+body {
+  background-color: #d398d4;
   margin: 0;
   font-family: monospace;
-} 
-.red-bg{
-  background-color:red;
 }
-.rainbow-bg{
+
+.red-bg {
+  background-color: red;
+}
+
+.rainbow-bg {
   background: linear-gradient(90deg in hsl longer hue, red 0 100%);
+}
+
+.yellow-bg {
+  background-color: #F2E38D;
 }
 
 /* text formatting */
 
-h1{
+h1 {
   text-align: center;
-  font-size: 100px;
+  font-size: clamp(4rem, 5rem, 6rem);
 }
 
-h2{
+h2 {
   text-align: center;
-  font-size: 300px;
+  font-size: 8rem;
+  margin: 70px 10px;
 }
 
-h3{
-  font-size:50px;
-}
-p{
-  text-align: center;
-  font-size: 30px;
+h3 {
+  font-size: clamp(1.5rem, 2rem, 3rem);
 }
 
-.countercontainer{
+p {
+  text-align: center;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+/*/ section /*/
+.bodycontainer {
+  display: flex;
+  flex-direction: column;
+  /* stack elements vertically */
+  align-items: center;
+  height: 100vh;
+  margin: 10px;
+  height: 100%;
+}
+
+/*/ containers  /*/
+.countercontainer {
   display: none;
   position: fixed;
   top: 10px;
@@ -43,59 +63,66 @@ p{
   width: 20em;
 }
 
-.container {
+.yesnocontainer {
   display: flex;
-  flex-direction: column;   /* stack elements vertically */
-  align-items: center;
   justify-content: center;
-  height: 80vh;
-  margin: 10px;
+  padding: 40px;
+  width: 100vw;
+  gap: 20px;
 }
 
-.spreadrow {
+.imagecontainer {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  margin: 200px;
+  justify-content: center;
+  column-gap: 10em;
+  width: 100vw;
+  height: 60vh;
 }
 
 /* hidden class */
 .hidden {
   display: none;
 }
+
 /* images */
-#duck{
-  height: 500px;
+#duck {
+  height: 400px;
   border: 3px solid black;
 }
 
-#duck:hover{
+#duck:hover {
   transform: translate(-0.05em, -0.05em);
   box-shadow: 0.30em 0.30em;
 }
 
-#duckegg{
-  height: 800px;
+#duckegg {
+  height: 400px;
   border: 10px solid #FAD628;
   margin: 40px;
+  align-self: start;
 }
 
-#flatduck{
-   height: 200px; 
-   width: 90vw;
-   transform: rotate(180deg);
+#flatduck {
+  height: 200px;
+  width: 90vw;
+  transform: rotate(180deg);
+  align-self: start;
+  margin: 100px;
 }
 
 #piglet {
-  right: 600px;
-  height:500px;
+  height: 400px;
   border: 3px solid black;
 }
 
 #piglet:hover {
   transform: translate(-0.05em, -0.05em);
   box-shadow: 0.30em 0.30em;
+}
+
+#omeletteimg {
+  height: 400px;
 }
 
 /* Buttons */
@@ -121,9 +148,9 @@ p{
   box-shadow: 0.05em 0.05em;
 }
 
-#backbutton{
+#backbutton {
   background-color: white;
-  color: #007BFF; 
+  color: #007BFF;
   font-family: monospace;
   padding: 0.6em 1.3em;
   font-weight: 900;
@@ -132,6 +159,7 @@ p{
   border-radius: 0.4em;
   box-shadow: 0.1em 0.1em;
   cursor: pointer;
+  height: 80px;
 }
 
 #backbutton:hover {
@@ -144,9 +172,9 @@ p{
   box-shadow: 0.05em 0.05em;
 }
 
-#eggbutton{
+#eggbutton {
   background-color: white;
-  color: #FC74FA; 
+  color: #FC74FA;
   font-family: monospace;
   padding: 0.6em 1.3em;
   font-weight: 900;
@@ -155,8 +183,9 @@ p{
   border-radius: 0.4em;
   box-shadow: 0.1em 0.1em;
   cursor: pointer;
-  margin: 40px;
+  height: 80px;
 }
+
 #eggbutton:hover {
   transform: translate(-0.05em, -0.05em);
   box-shadow: 0.15em 0.15em;
@@ -165,4 +194,34 @@ p{
 #eggbutton:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
+}
+
+/* omelette time */
+#omelettebutton {
+  background-color: white;
+  color: #a675d2;
+  font-family: monospace;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 30px;
+  border: 3px solid #a675d2;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+  height: 80px;
+}
+
+#omelettebutton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+#omelettebutton:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+
+.omelettes {
+  display: none;
 }
